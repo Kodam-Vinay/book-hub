@@ -1,0 +1,115 @@
+.login-bg-container {
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.login-image-bg-container {
+  display: flex;
+  flex-direction: column;
+  background: url('https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/Rectangle_1467_kljzqk.png'),
+    lightgray;
+  width: 216px;
+  height: 216px;
+  background-size: cover;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    border-radius: 0;
+  }
+}
+
+.login-form-container {
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
+    background: #f8fafc;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+.login-input-div-container {
+  margin-top: 50px;
+}
+
+.login-input-container {
+  display: flex;
+  flex-direction: column;
+  color: #5a7184;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  width: 360px;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+.label-element {
+  align-self: flex-start;
+  margin-bottom: 5px;
+}
+
+.login-input-element {
+  width: 360px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #c3cad9;
+  background: #fff;
+  font-size: 20px;
+  outline: none;
+  padding: 10px;
+}
+
+.login-button {
+  width: 360px;
+  height: 56px;
+  border-radius: 8px;
+  background: #0284c7;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 700;
+}
+
+.login-error-msg {
+  color: var(--light-red-500, #ef4444);
+  font-size: 16px;
+  font-family: 'HK Grotesk';
+  margin-top: 5px;
+  text-align: left;
+  align-self: flex-start;
+}
