@@ -13,22 +13,31 @@
 }
 
 .login-image-bg-container {
-  display: flex;
-  flex-direction: column;
-  background: url('https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/Rectangle_1467_kljzqk.png'),
-    lightgray;
-  width: 216px;
-  height: 216px;
-  background-size: cover;
-  border-radius: 50%;
-
+  display: none;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    background: url('https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/Rectangle_1467_kljzqk.png'),
+      lightgray;
     width: 50%;
     height: 100%;
     border-radius: 0;
   }
+}
+
+.website-login-image-container {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.Website-login-image {
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
 }
 
 .login-form-container {
@@ -59,7 +68,7 @@
 }
 
 .login-input-div-container {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .login-input-container {
@@ -71,7 +80,7 @@
   font-weight: 600;
   width: 360px;
   align-self: center;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .label-element {
@@ -112,4 +121,20 @@
   margin-top: 5px;
   text-align: left;
   align-self: flex-start;
+}
+
+.show-password-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #5a7184;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+}
+
+.show-password-checkbox {
+  height: 20px;
+  width: 20px;
 }

@@ -11,6 +11,7 @@ class Login extends Component {
     password: '',
     showError: false,
     errorMsg: null,
+    checked: false,
   }
 
   onSubmitSuccess = jwtToken => {
@@ -31,6 +32,12 @@ class Login extends Component {
 
   onEnterPassword = event => {
     this.setState({password: event.target.value})
+  }
+
+  onChangeCheckbox = () => {
+    this.setState(prevState => ({
+      checked: !prevState.checked,
+    }))
   }
 
   onSubmitLogin = async event => {
@@ -55,7 +62,7 @@ class Login extends Component {
   }
 
   render() {
-    const {username, password, showError, errorMsg} = this.state
+    const {username, password, showError, errorMsg, checked} = this.state
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
@@ -63,6 +70,13 @@ class Login extends Component {
     return (
       <div className="login-bg-container">
         <div className="login-image-bg-container">{}</div>
+        <div className="website-login-image-container">
+          <img
+            src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/Rectangle_1467_kljzqk.png"
+            alt="website login"
+            className="Website-login-image"
+          />
+        </div>
         <div className="login-form-container">
           <form className="form-container" onSubmit={this.onSubmitLogin}>
             <Logo altText="login website logo" />
@@ -86,12 +100,22 @@ class Login extends Component {
                 </label>
                 <input
                   id="passwordInput"
-                  type="password"
+                  type={checked ? 'text' : 'password'}
                   className="login-input-element"
                   placeholder="password"
                   onChange={this.onEnterPassword}
                   value={password}
                 />
+              </div>
+              <div className="show-password-container">
+                <input
+                  type="checkbox"
+                  className="show-password-checkbox"
+                  onChange={this.onChangeCheckbox}
+                  value={checked}
+                  id="checkedInput"
+                />
+                <label htmlFor="checkedInput">Show Password</label>
               </div>
             </div>
 

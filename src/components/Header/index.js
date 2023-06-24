@@ -1,20 +1,20 @@
-import {useState} from 'react'
 import {Link, withRouter} from 'react-router-dom'
 import Cookies from 'js-cookie'
+import {AiOutlineClose} from 'react-icons/ai'
+
 import {GiHamburgerMenu} from 'react-icons/gi'
 
 import './index.css'
 import Logo from '../Images/Logo'
 
 const Header = props => {
-  const [hamburgerButtonStatus, setStatusHamburger] = useState(false)
-  const {history} = props
+  const {history, changeStateHamburger, hamburgerButtonStatus} = props
   const onClickLogout = () => {
     Cookies.remove('jwt_token')
     history.replace('/login')
   }
   const onClickHamburger = () => {
-    setStatusHamburger(prevState => !prevState)
+    changeStateHamburger()
   }
   return (
     <div className="header-bg-container">
@@ -36,7 +36,7 @@ const Header = props => {
             className="hamburger-button"
             onClick={onClickHamburger}
           >
-            <GiHamburgerMenu size={24} />
+            <AiOutlineClose size={24} />
           </button>
         )}
       </div>

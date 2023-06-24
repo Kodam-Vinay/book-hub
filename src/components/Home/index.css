@@ -1,3 +1,132 @@
 .home-bg-container {
   height: 98vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+}
+
+.home-results-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.home-results-container-heading {
+  color: var(--light-blue-gray-800, #1e293b);
+  font-size: 28px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: 64px;
+  }
+}
+
+.nav-links-sm-list {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  box-shadow: 1px 1px 1px 1px #e4e7eb;
+  background: var(--text-color-alternative, #ffffff);
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.home-results-container-para {
+  margin-top: 0;
+  color: var(--light-blue-gray-600, #475569);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.home-finds-books-button {
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+}
+
+.home-top-rated-books-container {
+  margin-top: 50px;
+}
+
+.finds-books-sm-button {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.home-top-rated-books-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-self: center;
+  width: 95%;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16),
+    0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+}
+
+.finds-books-bg-button {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    align-self: flex-end;
+  }
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #989898;
+}
+
+.slider-items-container {
+  list-style: none;
+  padding: 10px;
+}
+
+.home-top-rated-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.home-top-rated-books-container-text {
+  color: var(--light-blue-gray-800, #1e293b);
+  text-align: center;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
