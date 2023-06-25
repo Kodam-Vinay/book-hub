@@ -1,0 +1,78 @@
+.book-shelves-item-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+.book-shelves-item-container-image {
+  width: 160px;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.book-shelves-item-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-shelves-item-text-container-title {
+  width: 140px;
+  color: var(--light-blue-gray-700, #334155);
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.book-shelves-item-text-container-author-name {
+  color: var(--light-blue-gray-600, #475569);
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.book-shelves-item-avg-rating-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+  height: 30px;
+  margin-top: 0;
+}
+
+.book-shelves-item-avg-text {
+  color: var(--light-blue-gray-600, #475569);
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.book-shelves-item-rating-text {
+  color: var(--light-blue-gray-700, #334155);
+  font-size: 14px;
+  font-family: HK Grotesk;
+  line-height: 20px;
+}
+
+.book-shelves-item-status {
+  color: var(--light-blue-gray-600, #475569);
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 0;
+}
+
+.book-shelves-item-reading-status {
+  color: #0284c7;
+}

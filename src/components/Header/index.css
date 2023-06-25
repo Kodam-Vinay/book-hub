@@ -72,3 +72,23 @@
   outline: none;
   border: 0;
 }
+
+.website-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.website-logo-container > p {
+  flex-shrink: 0;
+  color: #0284c7;
+  text-align: center;
+  font-size: 24px;
+  font-family: Almendra SC;
+  line-height: 24px;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+.website-logo {
+  width: 40px;
+}

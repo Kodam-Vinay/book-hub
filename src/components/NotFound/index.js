@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 import './index.css'
 
 const NotFound = () => (
@@ -12,6 +14,12 @@ const NotFound = () => (
       we are sorry, the page you requested could not be found, Please go back to
       the homepage.
     </p>
+    <Link to="/" className="nav-link">
+      <button className="logout-button" type="button">
+        Go Back to Home
+      </button>
+    </Link>
   </div>
 )
+
 export default NotFound

@@ -1,0 +1,43 @@
+.filter-list-item-sm {
+  display: block;
+  margin: 10px;
+  border-radius: 25px;
+  border: 1px solid #0284c7;
+  min-width: 50px;
+  background-color: transparent;
+  padding: 10px;
+  color: #0284c7;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 16px;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.filter-list-item-lg {
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: 0;
+    color: var(--light-blue-gray-600, #475569);
+    font-size: 13px;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 16px;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+.change-filter-sm-color {
+  background: #0284c7;
+  color: #ffffff;
+}
+
+.change-filter-lg-color {
+  color: #0284c7;
+}

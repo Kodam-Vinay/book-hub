@@ -3,7 +3,6 @@ import {Redirect} from 'react-router-dom'
 import Cookies from 'js-cookie'
 
 import './index.css'
-import Logo from '../Images/Logo'
 
 class Login extends Component {
   state = {
@@ -62,7 +61,8 @@ class Login extends Component {
   }
 
   render() {
-    const {username, password, showError, errorMsg, checked} = this.state
+    const {username, password, showError, errorMsg} = this.state
+    const checkPassword = password !== ''
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
@@ -79,7 +79,11 @@ class Login extends Component {
         </div>
         <div className="login-form-container">
           <form className="form-container" onSubmit={this.onSubmitLogin}>
-            <Logo altText="login website logo" />
+            <img
+              src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687670798/book%20hub/Group_7732_qntgjj.png"
+              alt="login website logo"
+              className="website-login-logo"
+            />
             <div className="login-input-div-container">
               <div className="login-input-container">
                 <label htmlFor="userInput" className="label-element">
@@ -100,22 +104,12 @@ class Login extends Component {
                 </label>
                 <input
                   id="passwordInput"
-                  type={checked ? 'text' : 'password'}
+                  type={checkPassword ? 'text' : 'password'}
                   className="login-input-element"
                   placeholder="password"
                   onChange={this.onEnterPassword}
                   value={password}
                 />
-              </div>
-              <div className="show-password-container">
-                <input
-                  type="checkbox"
-                  className="show-password-checkbox"
-                  onChange={this.onChangeCheckbox}
-                  value={checked}
-                  id="checkedInput"
-                />
-                <label htmlFor="checkedInput">Show Password</label>
               </div>
             </div>
 

@@ -81,6 +81,7 @@
   width: 360px;
   align-self: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .label-element {
@@ -123,18 +124,6 @@
   align-self: flex-start;
 }
 
-.show-password-container {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  color: #5a7184;
-  font-size: 16px;
-  font-family: Inter;
-  font-weight: 600;
-}
-
-.show-password-checkbox {
-  height: 20px;
-  width: 20px;
+.website-login-logo {
+  width: 100px;
 }

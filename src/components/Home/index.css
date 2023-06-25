@@ -1,15 +1,19 @@
 .home-bg-container {
-  height: 98vh;
+  height: 99vh;
   display: flex;
   flex-direction: column;
   background: #f5f7fa;
 }
 
 .home-results-container {
-  padding: 20px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 0;
+}
+
+.home-results-container-text-container {
+  padding: 20px;
 }
 
 .home-results-container-heading {
@@ -26,21 +30,26 @@
 }
 
 .nav-links-sm-list {
-  justify-content: space-evenly;
+  justify-content: space-around;
   display: flex;
-  flex-direction: column;
   align-items: center;
   list-style: none;
-  box-shadow: 1px 1px 1px 1px #e4e7eb;
-  background: var(--text-color-alternative, #ffffff);
-  border-radius: 10px;
-  height: 100%;
+  height: 60px;
   width: 100%;
   padding: 10px;
   margin: 0;
   @media screen and (min-width: 768px) {
     display: none;
   }
+}
+
+.home-nav-item {
+  color: var(--light-blue-gray-500, #64748b) !important;
+}
+
+.home-nav-links-sm-list-logout-button {
+  height: 30px;
+  margin: 0;
 }
 
 .home-results-container-para {
@@ -63,26 +72,35 @@
   width: 100px;
 }
 
-.home-top-rated-books-container {
-  margin-top: 50px;
-}
-
 .finds-books-sm-button {
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.home-carousel-footer-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .home-top-rated-books-container {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   align-self: center;
-  width: 95%;
-  border-radius: 16px;
+  border-radius: 0;
+  width: 100%;
   background: #fff;
-  box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16),
-    0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+  @media screen and (min-width: 768px) {
+    width: 95%;
+    border-radius: 16px;
+    box-shadow: 0px 1px 2px 0px rgba(96, 97, 112, 0.16),
+      0px 0px 1px 0px rgba(40, 41, 61, 0.08);
+  }
 }
 
 .finds-books-bg-button {
@@ -108,15 +126,17 @@
   align-items: center;
   justify-content: space-between;
   height: 40px;
+  margin-bottom: 20px;
 }
 
 .home-top-rated-books-container-text {
   color: var(--light-blue-gray-800, #1e293b);
   text-align: center;
-  font-size: 16px;
+  font-size: 18px;
   font-family: Inter;
   font-weight: 600;
   line-height: 24px;
+  margin-top: 0;
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 32px;
@@ -129,4 +149,34 @@
   align-items: center;
   justify-content: center;
   margin: auto;
+}
+
+.home-failure-div-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-failure-image {
+  width: 300px;
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
+}
+
+.home-failure-text {
+  color: var(--light-blue-gray-600, #475569);
+  text-align: center;
+  font-size: 14px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 48px;
+  }
 }

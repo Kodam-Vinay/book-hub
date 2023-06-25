@@ -1,0 +1,49 @@
+.each-carousel-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.each-carousel-item-image {
+  width: 146px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 2px;
+
+  @media screen and (min-width: 768px and max-width: 1140px) {
+    width: 150px;
+    height: 100px;
+  }
+
+  @media screen and (min-width: 1140px) {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+.each-carousel-item-container-heading {
+  color: var(--light-blue-gray-700, #334155);
+  text-align: center;
+  font-size: 12px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.each-carousel-item-container-para {
+  color: var(--light-blue-gray-600, #475569);
+  text-align: center;
+  font-size: 10px;
+  font-family: Inter;
+  line-height: 12px;
+  margin-top: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 20px;
+  }
+}
