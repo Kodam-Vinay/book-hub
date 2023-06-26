@@ -72,7 +72,7 @@ class Login extends Component {
         <div className="login-image-bg-container">{}</div>
         <div className="website-login-image-container">
           <img
-            src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/Rectangle_1467_kljzqk.png"
+            src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687519360/book%20hub/login%20background%20image.png"
             alt="website login"
             className="Website-login-image"
           />
@@ -80,7 +80,7 @@ class Login extends Component {
         <div className="login-form-container">
           <form className="form-container" onSubmit={this.onSubmitLogin}>
             <img
-              src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687670798/book%20hub/Group_7732_qntgjj.png"
+              src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687670798/book%20hub/logo.png"
               alt="login website logo"
               className="website-login-logo"
             />

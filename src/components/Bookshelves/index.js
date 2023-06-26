@@ -49,6 +49,7 @@ class BookShelves extends Component {
     bookDetailsList: [],
     apiStatus: constApiStatus.initial,
     searchInput: '',
+    notFoundContent: '',
   }
 
   componentDidMount() {
@@ -74,9 +75,13 @@ class BookShelves extends Component {
   }
 
   getResults = async () => {
-    this.setState({apiStatus: constApiStatus.inProgress})
-    const jwtToken = Cookies.get('jwt_token')
     const {activeFilter, searchInput} = this.state
+    this.setState({
+      apiStatus: constApiStatus.inProgress,
+      notFoundContent: searchInput,
+    })
+    const jwtToken = Cookies.get('jwt_token')
+
     const apiUrl = `https://apis.ccbp.in/book-hub/books?shelf=${activeFilter}&search=${searchInput}`
     const options = {
       headers: {
@@ -105,7 +110,7 @@ class BookShelves extends Component {
   }
 
   renderSuccessView = () => {
-    const {bookDetailsList, searchInput} = this.state
+    const {bookDetailsList, notFoundContent} = this.state
     const checkBooksListLength = bookDetailsList.length > 0
     return (
       <>
@@ -124,7 +129,7 @@ class BookShelves extends Component {
               className="home-failure-image"
             />
             <p className="no-books-found-container-text">
-              Your search for {searchInput} did not find any matches.
+              Your search for {notFoundContent} did not find any matches.
             </p>
           </div>
         )}
@@ -141,7 +146,7 @@ class BookShelves extends Component {
   renderFailureView = () => (
     <div className="home-failure-div-container">
       <img
-        src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687675726/book%20hub/Group_7522_wuar7o.png"
+        src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687675726/book%20hub/error-image.png"
         alt="failure view"
         className="home-failure-image"
       />

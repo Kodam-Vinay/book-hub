@@ -161,7 +161,7 @@ class Home extends Component {
   renderFailureView = () => (
     <div className="home-failure-div-container">
       <img
-        src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687675726/book%20hub/Group_7522_wuar7o.png"
+        src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687675726/book%20hub/error-image.png"
         alt="failure view"
         className="home-failure-image"
       />

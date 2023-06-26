@@ -24,7 +24,7 @@ const Header = props => {
           <div className="header-bg-container">
             <Link to="/" className="nav-link">
               <img
-                src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687670798/book%20hub/Group_7732_qntgjj.png"
+                src="https://res.cloudinary.com/dwgpba5n2/image/upload/v1687670798/book%20hub/logo.png"
                 alt="website logo"
                 className="website-login-logo"
               />
