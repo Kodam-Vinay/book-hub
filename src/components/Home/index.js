@@ -129,7 +129,7 @@ class Home extends Component {
               <h1 className="home-top-rated-books-container-text">
                 Top Rated Books
               </h1>
-              <Link to="/" className="nav-link finds-books-bg-button">
+              <Link to="/shelf" className="nav-link finds-books-bg-button">
                 <button
                   type="button"
                   className="logout-button home-finds-books-button"
@@ -138,11 +138,13 @@ class Home extends Component {
                 </button>
               </Link>
             </div>
-            <Slider {...settings}>
-              {slickList.map(eachItem => (
-                <SlickItem slickList={eachItem} key={eachItem.id} />
-              ))}
-            </Slider>
+            <ul className="slider-unordered-list-container">
+              <Slider {...settings}>
+                {slickList.map(eachItem => (
+                  <SlickItem slickList={eachItem} key={eachItem.id} />
+                ))}
+              </Slider>
+            </ul>
           </div>
           <Footer />
         </div>

@@ -5,19 +5,18 @@
 }
 
 .each-carousel-item-image {
-  width: 146px;
-  height: 100px;
-  flex-shrink: 0;
+  width: 160px;
+  height: 180px;
   border-radius: 2px;
 
-  @media screen and (min-width: 768px and max-width: 1140px) {
-    width: 150px;
-    height: 100px;
+  @media screen and (min-width: 768px) and (max-width: 1139px) {
+    width: 200px;
+    height: 250px;
   }
 
   @media screen and (min-width: 1140px) {
     width: 250px;
-    height: 200px;
+    height: 300px;
   }
 }
 
@@ -38,12 +37,12 @@
 .each-carousel-item-container-para {
   color: var(--light-blue-gray-600, #475569);
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Inter;
   line-height: 12px;
-  margin-top: 0;
+  margin-top: 5px;
   @media screen and (min-width: 768px) {
-    font-size: 22px;
+    font-size: 14px;
     line-height: 20px;
   }
 }

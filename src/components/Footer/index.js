@@ -10,7 +10,7 @@ const Footer = () => (
       <FaInstagram size={20} color="#3D3C3C" />
       <FaYoutube size={20} color="#3D3C3C" />
     </div>
-    <p className="footer-section-text">Contact Us</p>
+    <p className="footer-section-text">Contact us</p>
   </div>
 )
 export default Footer

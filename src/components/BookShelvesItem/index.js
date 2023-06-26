@@ -28,7 +28,7 @@ const BookShelvesItem = props => {
             <p className="book-shelves-item-rating-text">{rating}</p>
           </div>
           <p className="book-shelves-item-status">
-            Status :{' '}
+            Status:{' '}
             <span className="book-shelves-item-reading-status">
               {readStatus}
             </span>
